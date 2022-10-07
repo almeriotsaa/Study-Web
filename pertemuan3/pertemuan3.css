@@ -1,0 +1,43 @@
+*{
+    font: optional;
+    margin: 20px;
+}
+h5 {
+    font-size: 50px;
+    color: black;
+}
+p{
+    font-size: 20px;
+    color: black;
+    text-align: justify;
+}
+code{
+    font-size: 18px;
+}
+span{
+    color: green;
+}
+h3{
+    font-size: 30px;
+    color: black;
+}
+.name{
+    font-size: 50px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+footer{
+    font-size: 20px;
+    color: black;
+    text-align: center;
+}
+
+a{
+    margin: 6px;
+    color: gray;
+}
+
+* {
+    scroll-behavior: smooth;
+}

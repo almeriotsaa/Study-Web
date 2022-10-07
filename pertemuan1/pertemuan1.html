@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="../pertemuan1/pertemuan1.css">
+    <title>Pertemuan 1</title>
+</head>
+
+<body>
+    <form style="font-family: Quicksand;" 
+   name="myForm" onsubmit="return hasil()" method="post">
+        <h5>Form untuk siswa</h5>
+        <div style="margin-bottom: 6px;">
+            <label for="nama">Nama :</label>
+            <input id="name" name="forName" type="text" placeholder="Silahkan isi namamu" value="">
+        </div>
+        <div style="margin-bottom: 6px;">
+            <label>NIS :</label>
+            <input id="nis" name="forNis" type="number" placeholder="isi nis mu" value="">
+        </div>
+        <div style="margin-bottom: 6px;">
+            <label for="nama">Date :</label>
+            <input id="date" name="forDate" type="date" value="">
+        </div>
+        <div style="margin-bottom: 6px;">
+            <label for="nama">Gender :</label>
+            <select id="jenkel" name="forGen">
+                <option>Boy</option>
+                <option>Girl</option>
+            </select>
+        </div>
+        <div style="margin-bottom: 6px;">
+            <label for="agama">Agama :</label>
+            <input id="agama" type="text" value="Islam" readonly>
+        </div>
+        <input type="reset">
+        <button type="submit" onclick="hasil()">Oke</button>
+    </form>
+    <script>
+        function hasil() {
+            var for_nama = document.forms["myForm"]["forName"].value;
+            var for_nis = document.forms["myForm"]["forNis"].value;
+            var for_date = document.forms["myForm"]["forDate"].value;
+            if (for_nama == "") {
+                alert("Nama harus diisi");
+                return false;
+            }
+            if (for_nis == "") {
+                alert("NIS harus diisi");
+                return false;
+            }
+            if (for_date == "") {
+                alert("Date harus diisi");
+                return false;
+            }
+            // alert('Nama kamu : ' + document.getElementById('name').value + '\n' + 'NIS kamu : ' + document
+            //     .getElementById('nis').value + '\n' + 'Tanggal lahir kamu : ' + document.getElementById('date')
+            //     .value + '\n' + 'Jenis kelamin kamu : ' + document.getElementById('jenkel').value + '\n' +
+            //     'Agama kamu : ' + document.getElementById('agama').value);
+        }
+    </script>
+</body>

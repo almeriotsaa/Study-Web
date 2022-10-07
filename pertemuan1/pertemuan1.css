@@ -1,0 +1,41 @@
+*{
+    font-family: Quicksand;
+}
+body{
+    background-color: #81cbf9;
+}
+h5{
+    font-size: 50px;
+    color: black;
+    text-align: center;
+}
+form{
+    background-color: white;
+    margin: 50px;
+    padding: 20px;
+    color: black;
+    border-radius: 10px;
+}
+label{
+    font-size: 20px;
+}
+input{
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+button{
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #81cbf9;
+    background-color: #81cbf9;
+    color: black;
+}
+select{
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
